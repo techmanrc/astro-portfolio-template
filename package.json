@@ -14,7 +14,8 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,cjs,mjs,ts,tsx,md,mdx,astro}\"",
     "fix": "concurrently pnpm:fix:*",
     "fix:css": "stylelint \"src/**/*.{css,astro}\" --cache --cache-location ./node_modules/.cache/stylelint --fix",
-    "fix:code": "eslint --cache --cache-location ./node_modules/.cache/eslint --ignore-path .gitignore --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
+    "fix:code": "eslint --cache --cache-location ./node_modules/.cache/eslint --ignore-path .gitignore --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "astro": "^2.5.6"
@@ -26,8 +27,13 @@
     "cssnano": "^6.0.1",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-astro": "^0.27.1",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "micromatch": "^4.0.5",
     "postcss": "^8.4.24",
     "postcss-html": "^1.5.0",
     "postcss-import": "^15.1.0",

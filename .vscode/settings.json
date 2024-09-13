@@ -2,17 +2,14 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    "astro",
-    "typescript",
-    "typescriptreact"
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
   ],
   "prettier.documentSelectors": ["**/*.astro"],
-  "prettier.configPath": "prettier.config.cjs",
+  "prettier.configPath": "prettier.config.mjs",
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "stylelint.validate": [
-    "css",
-    "astro"
-  ]
+  "stylelint.validate": ["css", "astro"]
 }

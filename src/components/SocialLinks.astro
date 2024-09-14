@@ -1,0 +1,66 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<ul class="professional-links">
+  <li>
+    <a
+      href="https://twitter.com"
+      target="_blank"
+      rel="noreferrer noopener"
+      title="Twitter"
+    >
+      <Icon name="mdi:twitter" />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com"
+      target="_blank"
+      rel="noreferrer noopener"
+      title="GitHub"
+    >
+      <Icon name="mdi:github" />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://linkedin.com"
+      target="_blank"
+      rel="noreferrer noopener"
+      title="LinkedIn"
+    >
+      <Icon name="mdi:linkedin" />
+    </a>
+  </li>
+</ul>
+
+<style>
+  [data-icon] {
+    height: 24px;
+    width: 24px;
+  }
+
+  .professional-links {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    color: var(--color-menu-item);
+    line-height: var(--line-height-menu-item);
+    padding-inline-end: 1.3125rem;
+  }
+
+  li > a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  li > a:hover {
+    cursor: pointer;
+  }
+</style>

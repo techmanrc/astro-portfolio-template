@@ -1,4 +1,15 @@
 ---
+import '@fontsource/dm-sans/400.css'
+import '@fontsource/dm-sans/500.css'
+import '@fontsource/dm-sans/700.css'
+import '@fontsource/poppins/300.css'
+import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/600.css'
+import '@fontsource/poppins/700.css'
+import '#/styles/reset.css'
+import '#/styles/styles.css'
+
+import { Icon } from 'astro-icon/components'
 ---
 
 <html lang="en">
@@ -10,6 +21,170 @@
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro</h1>
+    <header>
+      <div>
+        <a href="/">Richard Cyrus</a>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certification</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="Twitter"
+              >
+                <Icon name="mdi:twitter" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="GitHub"
+              >
+                <Icon name="mdi:github" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="LinkedIn"
+              >
+                <Icon name="mdi:linkedin" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="home">
+        <div>
+          <p>Hi, 👋<br />my name is</p>
+          <p>Pavan MG</p>
+          <p>I build things for the web</p>
+        </div>
+        <div><img src="" alt="Pavan MG" /></div>
+      </div>
+      <div id="about">
+        <article>
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            dolor, eius esse rem nam corporis doloremque, commodi ratione saepe
+            obcaecati odit modi atque laborum magni laboriosam architecto eum
+            provident repellendus.
+          </p>
+        </article>
+        <article>
+          <h2>Work Experience</h2>
+          <section>
+            <h3>Company</h3>
+            <p>Location | duration</p>
+            <p>Position <span>duration</span></p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                nemo atque voluptatem corrupti officiis ut ullam amet impedit.
+                Nesciunt tenetur blanditiis quaerat, dolore animi tempore
+                similique officiis exercitationem unde harum.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                nemo atque voluptatem corrupti officiis ut ullam amet impedit.
+                Nesciunt tenetur blanditiis quaerat, dolore animi tempore
+                similique officiis exercitationem unde harum.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                nemo atque voluptatem corrupti officiis ut ullam amet impedit.
+                Nesciunt tenetur blanditiis quaerat, dolore animi tempore
+                similique officiis exercitationem unde harum.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Company</h3>
+            <p>Location | duration</p>
+            <p>Position <span>duration</span></p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                nemo atque voluptatem corrupti officiis ut ullam amet impedit.
+                Nesciunt tenetur blanditiis quaerat, dolore animi tempore
+                similique officiis exercitationem unde harum.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                nemo atque voluptatem corrupti officiis ut ullam amet impedit.
+                Nesciunt tenetur blanditiis quaerat, dolore animi tempore
+                similique officiis exercitationem unde harum.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                nemo atque voluptatem corrupti officiis ut ullam amet impedit.
+                Nesciunt tenetur blanditiis quaerat, dolore animi tempore
+                similique officiis exercitationem unde harum.
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article>
+          <h2>Education</h2>
+          <section>
+            <h3>Degree/Certificate</h3>
+            <p>University</p>
+          </section>
+          <section>
+            <h3>Degree/Certificate</h3>
+            <p>University</p>
+          </section>
+        </article>
+      </div>
+      <div id="portfolio">
+        <article>
+          <h2>Projects</h2>
+          <div>
+            <article>
+              <img src="" alt="" />
+              <section>
+                <h3>Project Title</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  ut suscipit eaque! Ullam, officiis sit. Non impedit,
+                  repellendus libero veritatis commodi cumque inventore, in ex
+                  alias explicabo provident consequuntur necessitatibus?
+                </p>
+                <p>Tech stack: HTML, JavaScript, Sass, React</p>
+              </section>
+              <div>
+                <Icon name="mdi:link-variant" /><a
+                  href="#live-project"
+                  target="_blank"
+                  rel="noreferrer noopener">Live Project</a
+                >
+                <Icon name="mdi:github" /><a
+                  href="#view-code"
+                  target="_blank"
+                  rel="noreferrer noopener">View Code</a
+                >
+              </div>
+            </article>
+          </div>
+        </article>
+      </div>
+    </main>
   </body>
 </html>

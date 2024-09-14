@@ -1,0 +1,42 @@
+---
+const { class: className } = Astro.props
+---
+
+<ul class={className}>
+  <li class="menu-item"><a href="/">Home</a></li>
+  <li class="menu-item"><a href="#about">About</a></li>
+  <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+  <li class="menu-item"><a href="#skills">Skills</a></li>
+  <li class="menu-item"><a href="#certifications">Certification</a></li>
+</ul>
+
+<style>
+  .menu {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-item {
+    color: var(--color-menu-item);
+    font-size: var(--font-size-menu-item);
+    line-height: var(--line-height-menu-item);
+    padding-inline-end: 1rem;
+  }
+
+  .menu-item > a {
+    text-decoration: none;
+  }
+
+  .menu-item > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 0.09375em;
+  }
+
+  .menu-right {
+    margin-inline: auto 3.1875rem;
+  }
+</style>
